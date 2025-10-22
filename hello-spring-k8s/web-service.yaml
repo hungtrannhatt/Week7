@@ -1,0 +1,11 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  name: web-login
+spec:
+  selector:
+    app: web-login
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080

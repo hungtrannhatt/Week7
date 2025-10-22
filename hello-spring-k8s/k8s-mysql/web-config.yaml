@@ -1,0 +1,6 @@
+﻿apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-config
+data:
+  SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/appdb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
